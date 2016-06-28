@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= link_to image_tag(@apartment.image.url(:large)), @apartment.image.url %>
+</p>
+
+<p>
   <strong>Latitude:</strong>
   <%= @apartment.latitude %>
 </p>

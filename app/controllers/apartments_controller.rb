@@ -76,6 +76,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def apartment_params
-      params.require(:apartment).permit(:latitude, :longitude, :address, :name, :contact)
+      params.require(:apartment).permit(:latitude, :longitude, :address, :name, :contact, :image)
     end
+
 end
