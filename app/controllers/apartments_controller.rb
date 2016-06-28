@@ -56,11 +56,6 @@ class ApartmentsController < ApplicationController
     @hash = Gmaps4rails.build_markers(@apartments) do |apartment, marker|
       marker.lat apartment.latitude
       marker.lng apartment.longitude
-      marker.picture ({
-        "url" => "app/assets/images/original.png",
-        "width" => 50,
-        "height" => 66
-        })
     end
 end
   # DELETE /apartments/1
